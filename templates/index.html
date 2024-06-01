@@ -11,7 +11,7 @@
       height: 100vh;
     }
     #sidebar {
-      width: 250px; /* Sivupalkin leveys */
+      width: 250px;
       background-color:	#363333;
       color: #FFB6C1;
       padding: 15px;
@@ -23,13 +23,14 @@
       padding: 15px;
     }
     #banner {
-      width: 100%;
-      height: 150px; 
-      background-image: url('{{ url_for('static', filename='banner.png') }}');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  width: 100%;
+  height: 150px; 
+  background-image: url('/static/banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
     img {
       width: 100%;
       height: auto;
@@ -39,7 +40,7 @@
       padding: 0;
     }
     nav ul li a {
-      color: #FFFFFF;
+      color: #ffffff;
       text-decoration: none;
     }
   </style>
@@ -49,6 +50,7 @@
         <h1>Pelivalikko</h1>
         <nav>
             <ul>
+                <li><a href="/">Koti</a></li>
                 <li><a href="/sanapeli">Sanapeli</a></li>
                 <li><a href="/numeropeli">Numeropeli</a></li>
                 <li><a href="/kirjainpeli">Kirjainpeli</a></li>
@@ -58,8 +60,8 @@
     <div id="main-content">
         <div id="banner">
         </div>
-        <p>Toddler university on 1-4 -vuotiaille tarkoitettu sovellus. 
-          Sovelluksella voi tehdä erilaisia harjoituksia, jossa opetellaan sanoja, numeroita ja muita pienille soveltuvia aiheita. 
+        <p>
+          Tervetuloa!
         </p>
     </div>
 </body>
