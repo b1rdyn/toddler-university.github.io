@@ -2,11 +2,12 @@
 
 Sovellus on tarkoitettu 1-4 -vuotiaille taaperoille. Sovelluksella voi tehdä erilaisia harjoituksia, jossa opetellaan sanoja, numeroita ja muita pienille soveltuvia aiheita. Sovellus toimii sekä suomen, että englannin kielellä.
 
-Esimerkkejä toiminnoista:
-- Kortteja, jossa näytetään kuva tekstin kanssa ja lapsen tai lapsen kanssa pelaavan aikuisen on takoitus nimetä kuva
-- Näytetään kuvia joissa on 0-10 määrä jotakin asiaa. Kuvaa klikkaamalla tulee esiin kuvassa näkyvien asioiden lukumäärä numerona
-- Kirjainten opettelu
+Toimintoja:
+- Kirjainten opettelu: Etsitään kirjain näppäimistöstä: HIENOSÄÄTÖÄ VAILLE VALMIS
+- Kortteja, jossa näytetään kuva tekstin kanssa ja lapsen tai lapsen kanssa pelaavan aikuisen on takoitus nimetä kuva: TULOSSA
+- Näytetään kuvia joissa on 0-10 määrä jotakin asiaa. Kuvaa klikkaamalla tulee esiin kuvassa näkyvien asioiden lukumäärä numerona: TULOSSA
 
+VAIHEESSA:
 Eng.
 The app is for toddlers aged 1-4. With the app, you can do various exercises that teach words, numbers and other topics suitable for little ones. The application works in both Finnish and English.
 
