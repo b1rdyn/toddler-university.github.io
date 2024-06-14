@@ -75,8 +75,19 @@
       color: #ffffff;
       text-decoration: none;
     }
+    .punainen { color: red; }
+    .sininen { color: blue; }
+    .vihreä { color: green; }
+    .vaaleanpunainen { color: pink; }
+    .violetti { color: purple; }
+    .harmaa { color: grey; }
+    .musta { color: black; }
+    .oranssi { color: orange; }
+    .keltainen { color: yellow; }
+
     </style>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='numeropeli.css') }}">  
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='varipeli.css') }}">
+
 </head>
 <body>
     <div id="sidebar">
@@ -94,7 +105,7 @@
     <div id="main-content">
         <div id="banner"></div>
         <h2 id="otsikko">VÄRIPELI</h2>
-        <h2 id="otsikko">{{ "Mikä näistä on " + correct_word + "?" | capitalize }}</h2>
+        <h2 id="otsikko">{{ "Mikä näistä on " }}<span class="{{ correct_word }}">{{ correct_word }}</span>{{ "?" }}</h2>
         <form method="POST" action="{{ url_for('varipeli.varipeli_validate') }}">
             <div class="white-box">
                 {% for kuva in kuvat %}
