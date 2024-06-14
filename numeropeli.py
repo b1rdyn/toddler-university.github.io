@@ -32,7 +32,8 @@ def numeropeli_validate():
     if selected_word == correct_word:
         return redirect(url_for('numeropeli.numeropeli'))
     else:
-        return render_template('numeropeli.html', message="Yritä uudelleen", words=get_random_words(3, correct_word), kuva_url=url_for('static', filename=f'numeropeli/{correct_word}.webp'), sana=correct_word)
+        return render_template('numeropeli.html', message="Yritä uudelleen", words=get_random_words(3, correct_word), 
+                               kuva_url=url_for('static', filename=f'numeropeli/{correct_word}.webp'), sana=correct_word)
 
 if __name__ == '__main__':
     app.register_blueprint(numeropeli_bp, url_prefix='/numeropeli')
