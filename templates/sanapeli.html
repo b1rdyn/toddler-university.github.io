@@ -44,7 +44,8 @@
         text-decoration: none;
       }
     </style>
-  </head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='sanapeli.css') }}">
+</head>
 <body>
     <div id="sidebar">
         <h1>Pelivalikko</h1>
@@ -58,3 +59,10 @@
             </ul>
         </nav>
     </div>
+    <div id="main-content">
+        <div id="banner"></div>
+            <img src="{{ kuva_url }}" alt="Satunnainen kuva" onclick="alert('{{ sana }}')">
+            <p>{{ sana }}</p>
+        </div>
+</body>
+</html>
