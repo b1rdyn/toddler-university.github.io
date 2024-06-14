@@ -85,9 +85,19 @@
       </nav>
     </div>
     <div id="main-content">
-      <div id="banner"></div>
-      <div class="white-box">
+        <div id="banner"></div>
+        <div class="white-box">
           <img src="{{ kuva_url }}" class="responsive-image" alt="{{ sana }}">
+        </div>
+        {% if message %}
+          <p>{{ message }}</p>
+        {% endif %}
+        <form action="{{ url_for('numeropeli.numeropeli_validate') }}" method="post">
+          <input type="hidden" name="correct_word" value="{{ sana }}">
+          {% for word in words %}
+            <button type="submit" name="selected_word" value="{{ word }}">{{ word }}</button>
+          {% endfor %}
+        </form>
       </div>
-  </body>
-  </html>
+    </body>
+    </html>

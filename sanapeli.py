@@ -18,7 +18,7 @@ def sanapeli():
     return render_template('sanapeli.html', kuva_url=image_route, sana=word)
 
 
-@sanapeli_bp.route('/sanapeli/next')
+@sanapeli_bp.route('/sanapeli')
 def sanapeli_next():
     return sanapeli()
 
