@@ -2,7 +2,7 @@
 <html lang="fi">
   <head>
     <meta charset="UTF-8">
-    <title>Kirjainpeli</title>
+    <title>Väripeli</title>
     <style>
       body {
         margin: 0;
@@ -58,18 +58,3 @@
             </ul>
         </nav>
     </div>
-    <div id="main-content">
-        <div id="banner"></div>
-        <h1>ETSI KIRJAIN</h1>
-        <h1>{{ letter }}</h1>
-        <form method="POST">
-            Kirjain: <input type="text" name="input_letter" autofocus>
-            <input type="hidden" name="hidden_letter" value="{{ letter }}">
-            <input type="submit" value="Tarkista">
-        </form>
-        {% if message %}
-            <p>{{ message }}</p>
-        {% endif %}
-    </div>
-</body>
-</html>

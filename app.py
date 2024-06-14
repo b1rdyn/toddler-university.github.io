@@ -18,7 +18,7 @@ def numeropeli():
 
 @app.route('/kirjainpeli', methods=['GET', 'POST'])
 def kirjainpeli():
-    message = ''  # Alustetaan muuttuja tyhjällä merkkijonolla
+    message = ''
     if request.method == 'GET':
         letter_to_display = random.choice(string.ascii_uppercase)
     else:
@@ -26,12 +26,15 @@ def kirjainpeli():
         correct = (user_input == request.form['hidden_letter'])
         if correct:
             message = 'Oikein!'
-            letter_to_display = random.choice(string.ascii_uppercase)  # Uusi kirjain oikean vastauksen jälkeen
+            letter_to_display = random.choice(string.ascii_uppercase)
         else:
             message = 'Yritä uudelleen'
             letter_to_display = request.form['hidden_letter']
     return render_template('kirjainpeli.html', letter=letter_to_display, message=message)
 
+@app.route('/varipeli')
+def varipeli():
+    return render_template('varipeli.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
