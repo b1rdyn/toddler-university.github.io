@@ -1,8 +1,9 @@
-from flask import Flask, render_template
+from flask import Blueprint, Flask, render_template
 from sanapeli import sanapeli_bp
 from numeropeli import numeropeli_bp
 from kirjainpeli import kirjainpeli_bp
 from varipeli import varipeli_bp
+from login import login_bp
 
 app = Flask(__name__)
 
@@ -10,6 +11,7 @@ app.register_blueprint(sanapeli_bp)
 app.register_blueprint(numeropeli_bp)
 app.register_blueprint(kirjainpeli_bp)
 app.register_blueprint(varipeli_bp)
+app.register_blueprint(login_bp)
 
 @app.route('/')
 def home():

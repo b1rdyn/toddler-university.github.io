@@ -62,7 +62,8 @@
   </style>
 </head>
 <body>
-    <div id="sidebar">
+    <div>
+        <div id="main-content">
         <h1>Pelivalikko</h1>
         <nav>
             <ul>
@@ -74,26 +75,7 @@
             </ul>
         </nav>
     </div>
-    </div>
-    <div id="main-content">
       <div id="banner"></div>
-      <h2 id="otsikko">ETUSIVU</h2>
-        <p>
-        Toddler University on 0-4 -vuotiaille tarkoitettu sovellus, 
-        </p><p>
-        jolla voit pelata erilaisia taaperon kehitystä tukevia pelejä.
-        </p>
-        <p>
-        Kirjaudu sisään tai rekisteröidy:
-        </p>
-      <h2>Kirjaudu sisään</h2>
-        <form action="/" method="post">
-            <div class="msg">{{ msg }}</div>
-            <input id="username" name="username" type="text" placeholder="Käyttäjänimi" class="textbox"/><br/><br/>
-            <input id="password" name="password" type="password" placeholder="Salasana" class="textbox"/><br/><br/><br/>
-            <input type="submit" class="btn" value="Sign In"/><br/><br/>
-        </form>
-        <p class="bottom">Ei käyttäjää?  <a class="bottom" href="/register"> Rekisteröidy</a></p>
     </div>
 </body>
 </html>
