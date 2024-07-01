@@ -11,3 +11,16 @@ Toiminnot:
   Näytölle tulee kuva jossa on x määrä jotakin asiaa, sekä 3 eri numeroa. Tehtävänä on klikata sitä numeroa, joka vastaa kuvassa olevaa lukumäärää
 - Väripeli:
   Näytölle tulee kolme kuvaa sekä kysymys: Mikä näistä on [väri]? Tehtävänä on klikata oikean väristä kuvaa.
+
+#SETUP
+clone the Toddler University repository to your local machine:
+git clone https://github.com/b1rdyn/toddler-university.github.io.git
+
+Navigate to the project directory and install the necessary dependencies:
+cd toddler-university.github.io
+yarn install
+
+To run the app locally during development, use the following command:
+yarn start
+
+The app will be available at http://localhost:3000.
